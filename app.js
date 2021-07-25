@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-app.use('/static', express.static("dist"));
+app.use(express.static("dist"));
 
 const port = normalizePort(process.env.PORT || '3000');
 
@@ -23,7 +23,6 @@ function normalizePort(val) {
 
 app.listen(port, () => {
   console.log(`Our app is running on port ${ port }`);
-  console.log(`Example app listening at http://localhost:${port}`)
 })
 
 // const server = http.createServer((req, res) => {
