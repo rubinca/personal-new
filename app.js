@@ -22,6 +22,7 @@ function normalizePort(val) {
 
 
 app.listen(port, () => {
+  console.log(`Our app is running on port ${ port }`);
   console.log(`Example app listening at http://localhost:${port}`)
 })
 
